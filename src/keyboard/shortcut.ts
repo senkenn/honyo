@@ -14,10 +14,7 @@ export function getDefaultShortcut(): ShortcutConfig {
 }
 
 // Check if key event matches shortcut config
-export function matchesShortcut(
-  event: UiohookKeyboardEvent,
-  config: ShortcutConfig,
-): boolean {
+export function matchesShortcut(event: UiohookKeyboardEvent, config: ShortcutConfig): boolean {
   return (
     event.keycode === config.keycode &&
     event.ctrlKey === config.ctrlKey &&
